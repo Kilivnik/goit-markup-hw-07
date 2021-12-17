@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container header__container">
             <nav class="menu">
-                <a class="link logo menu__logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
+                <a class="link logo menu__logo" href="./index.html">Web<span class="menu__logo-dark">Studio</span></a>
                 <ul class="list navigation">
                     <li class="navigation__item"><a class="link navigation__link navigation__link-active"
                             href="./index.html">Студия</a></li>
@@ -46,10 +46,10 @@
 
     <main>
         <!-- Секция с кнопкой -->
-        <section class="main overlay">
-            <div class="container">
-                <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="main-btn button" type="button" data-modal-open>Заказать услугу</button>
+        <section class="overlay">
+            <div class="container overlay__container">
+                <h1 class="overlay__title">Эффективные решения для вашего бизнеса</h1>
+                <button class="overlay__btn button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -58,46 +58,46 @@
         <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
-                <ul class="list section-list">
-                    <li class="section-item">
-                        <a href="" class="section-item-link">
+                <ul class="list features">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="section-item-icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
-                        </a>
-                        <h3 class="section-title">Внимание к деталям</h3>
-                        <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию
+                        </div>
+                        <h3 class="features__title">Внимание к деталям</h3>
+                        <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
-                    <li class="section-item">
-                        <a href="" class="section-item-link">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="section-item-icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
-                        </a>
-                        <h3 class="section-title">Пунктуальность</h3>
-                        <p class="section-text">Задача организации, в особенности же рамки и место обучения кадров
+                        </div>
+                        <h3 class="features__title">Пунктуальность</h3>
+                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за
                             собой.</p>
                     </li>
-                    <li class="section-item">
-                        <a href="" class="section-item-link">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="section-item-icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
-                        </a>
-                        <h3 class="section-title">Планирование</h3>
-                        <p class="section-text">Равным образом консультация с широким активом в значительной степени
+                        </div>
+                        <h3 class="features__title">Планирование</h3>
+                        <p class="features__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="section-item">
-                        <a href="" class="section-item-link">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="section-item-icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
-                        </a>
-                        <h3 class="section-title">Современные технологии</h3>
-                        <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                        </div>
+                        <h3 class="features__title">Современные технологии</h3>
+                        <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.
                         </p>
                     </li>
@@ -106,23 +106,23 @@
         </section>
 
         <!-- Секция чем мы занимаемся -->
-        <section class="about section">
+        <section class="section section-padding-not">
             <div class="container">
-                <h3 class="about-title">Чем мы занимаемся</h3>
-                <ul class="list about-list">
-                    <li class="about-item">
+                <h3 class="section__title section__title-mb">Чем мы занимаемся</h3>
+                <ul class="list about">
+                    <li class="about__item">
                         <img src="./images/box.jpg" alt="Человек печатает на клавиатуре" width="370">
-                        <p class="about-item-text">Десктопные приложения</p>
+                        <p class="about__text">Десктопные приложения</p>
                     </li>
 
-                    <li class="about-item">
+                    <li class="about__item">
                         <img src="./images/box2.jpg" alt="Человек с телефоном возле ноутбука" width="370">
-                        <p class="about-item-text">Мобильные приложения</p>
+                        <p class="about__text">Мобильные приложения</p>
                     </li>
 
-                    <li class="about-item">
+                    <li class="about__item">
                         <img src="./images/box3.jpg" alt="Человек с планшетом в руках" width="370">
-                        <p class="about-item-text">Дизайнерские решения</p>
+                        <p class="about__text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -131,7 +131,7 @@
         <!-- Секция наша команда -->
         <section class="section about-command">
             <div class="container">
-                <h3 class="about-command-title">Наша команда</h3>
+                <h3 class="section__title section__title-mb">Наша команда</h3>
                 <ul class="list about-command-list">
                     <li class="list about-command-item">
                         <img src="./images/team-card-1.jpg" alt="Игорь Демьяненко" width="270">
@@ -291,7 +291,7 @@
         <!-- Постоянные клиенты -->
         <section class="regular-client section">
             <div class="container">
-                <h3 class="regular-client-title">Постоянные клиенты</h3>
+                <h3 class="section__title section__title-mb">Постоянные клиенты</h3>
                 <ul class="regular-client-list list">
                     <li class="regular-client-item">
                         <a href="" class="regular-client-link">
