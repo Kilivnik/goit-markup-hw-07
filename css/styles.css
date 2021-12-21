@@ -53,13 +53,18 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: #e5e5e5;
+}
+
 .section-padding-not {
   padding-top: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section-background {
+  background: #f5f4fa;
 }
 
 .list {
@@ -112,18 +117,12 @@ body {
   color: #000;
 }
 
-/*---------------HEADER---------------*/
-
-/*
-.logo-footer {
-  color: var(--accent-color);
-  display: flex;
+.footer__logo {
+  display: block;
   margin-bottom: 20px;
-  margin-right: 93px;
-  width: 145px;
 }
 
-.logo-studio-footer {
+.footer__logo-light {
   color: var(--primary-color);
 }
 
@@ -296,6 +295,7 @@ body {
 }
 
 /*--------------SECTIONS----------*/
+
 /*-- Секция с нашими осебенностями ---*/
 .features {
   display: flex;
@@ -372,85 +372,55 @@ body {
 
 /*-- Секция наша команда ---*/
 
-.about-command-list {
+.team {
   display: flex;
 }
 
-.about-command-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-command {
-  background: #f5f4fa;
-}
-
-.about-command-bottom {
-  background: var(--primary-color);
-}
-
-.about-command-item {
+.team__item {
   flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.about-command-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team__box {
+  padding: 30px 32px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   text-align: center;
+  background: var(--primary-color);
 }
 
-.about-command-name {
+.team__title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   color: var(--primary-title-color);
   margin-bottom: 10px;
 }
 
-.about-command-text {
-  font-size: 16px;
-  line-height: 1.19;
+.team__text {
   color: var(--text-color);
   margin-bottom: 16px;
 }
 
-.command-social-list {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.command-social-item {
+.social__item {
   width: 44px;
   height: 44px;
   cursor: pointer;
 }
 
-.command-social-link:focus,
-.command-social-link:hover {
-  background-color: var(--primary-btn-color);
-}
-
-.command-social-link:hover .command-social-icon,
-.command-social-link:focus .command-social-icon {
-  fill: var(--second-text-btn-color);
-  background-color: var(--primary-btn-color);
-}
-
-.command-social-item + .command-social-item {
-  margin-left: 10px;
-}
-
-.command-social-icon {
-  fill: rgba(175, 177, 184, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.command-social-link {
+.social__link {
   width: 100%;
   height: 100%;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,26 +429,35 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social__icon {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
+}
+
+.social__link:focus,
+.social__link:hover {
+  background-color: var(--primary-btn-color);
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--second-text-btn-color);
+  background-color: var(--primary-btn-color);
+}
+
 /*-- Постоянные клиенты ---*/
 
-.regular-client {
-  color: #e5e5e5;
-}
-
-.regular-client-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.regular-client-list {
+.client {
   display: flex;
   justify-content: center;
 }
 
-.regular-client-item {
+.client__item {
   width: 170px;
   height: 92px;
   display: block;
@@ -490,26 +469,31 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-client-item + .regular-client-item {
+.client__item + .client__item {
   margin-left: 30px;
 }
 
-.regular-client-icon {
+.client__item:hover,
+.client__item:focus {
+  border-color: var(--accent-color);
+}
+
+.client__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client__icon {
   fill: rgba(175, 177, 184, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-client-item:hover,
-.regular-client-item:focus {
-  border-color: var(--accent-color);
-}
-
-.regular-client-link:hover .regular-client-icon,
-.regular-client-link:focus .regular-client-icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__iconn {
   fill: var(--accent-color);
-}
-.command-social-item + .command-social-item {
-  margin-left: 10px;
 }
 
 /*---------------FOOTER----------*/
@@ -517,20 +501,22 @@ body {
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  justify-content: center;
 }
 
-.footer-box {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-item:not(:last-child) {
+.footer__box {
+  margin-right: 70px;
+}
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-map {
+.address__map {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -538,8 +524,7 @@ body {
   width: 231px;
 }
 
-.footer-mail,
-.footer-tel {
+.address__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -548,26 +533,14 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*------------ Cоц сети -----------*/
 
-.footer-social {
-  display: block;
-  align-items: center;
-  margin-left: 70px;
-}
-
-.footer-social-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -576,64 +549,38 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
 }
-
-.footer-social-item {
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.social-pad-mar-not {
+  padding: 0;
+  margin: 0;
 }
 
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.footer-social-icon {
-  fill: var(--second-text-btn-color);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-social-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.social__link-dark {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mailing {
-  margin-left: auto;
-  height: 86px;
-  width: 570px;
+.social__icon-dark {
+  fill: var(--second-text-btn-color);
 }
 
-.mailing-form {
+.social__link-dark:hover,
+.social__link-darkk:focus {
+  background-color: var(--accent-color);
+}
+/*----------- Рассылка ---------*/
+
+.mailing {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
+  /* margin-left: auto; */
+  height: 86px;
+  width: 570px;
 }
 
-.mailing-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.footer-email-mailing {
+.mailing__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -652,7 +599,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-email-mailing::placeholder {
+.mailing__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -660,11 +607,11 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-email-mailing:focus {
+.mailing__input:focus {
   border-color: var(--accent-color);
 }
 
-.mailing-btn {
+.mailing__btn {
   width: 200px;
   height: 50px;
   background: var(--primary-btn-color);
@@ -672,11 +619,6 @@ body {
   border-radius: 4px;
   padding: 10px 28px 10px 29px;
   display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.mailing-btn-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -686,7 +628,7 @@ body {
   color: var(--primary-color);
 }
 
-.mailing-icon {
+.button__icon {
   fill: var(--primary-color);
   margin-left: 10px;
 }
