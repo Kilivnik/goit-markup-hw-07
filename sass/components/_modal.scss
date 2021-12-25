@@ -11,12 +11,6 @@
   transition: opacity 1000ms, visibility 1000ms;
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop.is-hidden .modal {
   transform: scaleX(1.5) rotate(180deg);
   transition: transform 1000ms;

@@ -25,6 +25,12 @@
   overflow: hidden;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 p,
 h1,
 h2,
@@ -184,7 +190,7 @@ body {
 }
 
 .social__link-dark:hover,
-.social__link-darkk:focus {
+.social__link-dark:focus {
   background-color: var(--accent-color);
 }
 
@@ -196,12 +202,6 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 1000ms, visibility 1000ms;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
