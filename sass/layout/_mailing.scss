@@ -1,6 +1,5 @@
 .mailing {
-  display: flex;
-  justify-content: center;
+  @extend %flex-list;
   align-items: center;
   padding: 0;
   height: 86px;
@@ -28,10 +27,7 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(400, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }
@@ -44,12 +40,9 @@
   border-radius: 4px;
   padding: 10px 28px 10px 29px;
   display: flex;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(700, 20px, 1.87, 0.06em);
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--primary-color);
 }
 

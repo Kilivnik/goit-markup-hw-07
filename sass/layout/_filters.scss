@@ -1,6 +1,5 @@
 .filters {
-  display: flex;
-  justify-content: center;
+  @extend %flex-list;
 }
 
 .section__filters {

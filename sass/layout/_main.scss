@@ -28,10 +28,7 @@
 .overlay__title {
   width: 696px;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.36, 0.06em);
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -39,10 +36,7 @@
 .overlay__btn {
   color: var(--second-text-btn-color);
   background-color: var(--primary-btn-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
   cursor: pointer;
   width: 200px;
   height: 50px;

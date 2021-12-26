@@ -14,9 +14,8 @@
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  display: flex;
+  @extend %flex-list;
   align-items: center;
-  justify-content: center;
   background: #f5f4fa;
   border-radius: 4px;
 }
