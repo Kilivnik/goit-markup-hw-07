@@ -6,10 +6,9 @@
   position: relative;
   width: 370px;
   flex-basis: calc((100% - 60px) / 3);
-}
-
-.about__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about__text {

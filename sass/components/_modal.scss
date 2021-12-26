@@ -11,9 +11,11 @@
   transition: opacity 1000ms, visibility 1000ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: scaleX(1.5) rotate(180deg);
-  transition: transform 1000ms;
+.backdrop.is-hidden {
+  .modal {
+    transform: scaleX(1.5) rotate(180deg);
+    transition: transform 1000ms;
+  }
 }
 
 .modal {
@@ -47,10 +49,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close:focus {
-  fill: var(--accent-color);
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__text {
@@ -96,15 +97,13 @@
   outline: none;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__input:focus,
-.form__input:focus {
-  border: 1px solid #2196f3;
-}
-
-.form__input:focus + .form__icon {
-  fill: var(--accent-color);
+  &:focus,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+  &:focus + .form__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .form__textarea {
@@ -120,18 +119,16 @@
   padding: 12px 16px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea:focus,
-.form__textarea:focus {
-  border: 1px solid #2196f3;
+  &:focus,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal__checkbox {
@@ -169,9 +166,11 @@
   fill: var(--second-text-btn-color);
 }
 
-.modal__check:checked + .check__text .check__item {
-  background-color: var(--primary-btn-color);
-  border: none;
+.modal__check:checked + .check__text {
+  .check__item {
+    background-color: var(--primary-btn-color);
+    border: none;
+  }
 }
 
 .policy__link {
@@ -195,9 +194,8 @@
   letter-spacing: 0.06em;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__btn:focus,
-.form__btn:hover {
-  background: var(--second-btn-color);
+  &:focus,
+  &:hover {
+    background: var(--second-btn-color);
+  }
 }
