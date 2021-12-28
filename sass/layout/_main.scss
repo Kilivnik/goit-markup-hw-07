@@ -15,25 +15,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
 }
 
 .overlay__container {
-  margin: 0;
+  // margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .overlay__title {
-  width: 696px;
+  max-width: 700px;
   margin-bottom: 30px;
   @include font(900, 44px, 1.36, 0.06em);
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .overlay__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--second-text-btn-color);
   background-color: var(--primary-btn-color);
   @include font(700, 16px, 1.88, 0.06em);

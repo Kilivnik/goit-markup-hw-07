@@ -481,18 +481,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
 }
 
 .overlay__container {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .overlay__title {
-  width: 696px;
+  max-width: 700px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -500,9 +498,13 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .overlay__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--second-text-btn-color);
   background-color: var(--primary-btn-color);
   font-weight: 700;
@@ -665,8 +667,12 @@ body {
   align-items: baseline;
 }
 
-.footer__box {
+.footer__box:first-child {
   margin-right: 70px;
+}
+
+.footer__box:nth-child(2) {
+  margin-right: 93px;
 }
 
 .footer__title {
@@ -677,6 +683,13 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.address__list {
+  width: 231px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .address__item:not(:last-child) {
@@ -705,10 +718,9 @@ body {
 }
 
 .mailing {
+  display: flex;
   align-items: center;
   padding: 0;
-  height: 86px;
-  width: 570px;
 }
 
 .mailing__input {
@@ -750,17 +762,18 @@ body {
   border-radius: 4px;
   padding: 10px 28px 10px 29px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  align-items: center;
   text-align: center;
   color: var(--primary-color);
 }
 
 .button__icon {
-  fill: var(--primary-color);
+  fill: var(--second-text-btn-color);
   margin-left: 10px;
 }
 

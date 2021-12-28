@@ -9,8 +9,12 @@
   align-items: baseline;
 }
 
-.footer__box {
+.footer__box:first-child {
   margin-right: 70px;
+}
+
+.footer__box:nth-child(2) {
+  margin-right: 93px;
 }
 
 .footer__title {
